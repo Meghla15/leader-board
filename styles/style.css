@@ -28,6 +28,44 @@ hr{
     border: 1px solid #d1d1d1;
 }
 
+/*-----------------
+   Header Style  
+--------------------*/
+.header{
+    width: 1790px;
+    height: 94px;
+    background-color: #562EFF;
+    display: flex;
+}
+.idea{
+    display: flex;
+    align-items: center;
+}
+h1{
+    color:white;
+    margin-left: 15px;
+}
+.icon{
+    width: 40.424px;
+    height: 51px;
+    margin-left: 280px;
+}
+.menu{
+    display:grid;
+    align-items: center;
+    margin-left: 725px;
+    justify-content: space-evenly;
+}
+li{
+    display: inline;
+    margin-top: 35px;
+}
+.navigation-bar{
+    float: right;
+    list-style: none;
+    margin-left: 45px;
+}
+
 /*------------------ 
 Top players styles 
 --------------------- */
@@ -145,6 +183,7 @@ Top Blogs styles
      Mobile Devices 
    ------------------*/
   @media only screen and (max-width:688px){
+   
     .container{
         width: 100%;
     }
