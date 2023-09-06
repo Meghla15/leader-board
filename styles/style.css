@@ -91,26 +91,28 @@ Top Blogs styles
 .blog-author{
     font-size: 16px;
     color: #9f9f9f;
+ 
 }
 .blog-author a{
     text-decoration: none;
     font-size: 16px;
     color: #562EFF;
+   
 }
 
 /*---------------
   Courses Style
   --------------- */
-  
+  .courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+  }
   .course .course-banner img{
     width: 266px;
     height: 141px;
   }
-  .courses{
-    display: flex;
-    gap: 30px;
-    
-  }
+  
   .course-info{
     display: flex;
     align-items: center;
@@ -129,6 +131,32 @@ Top Blogs styles
   .course-duration{
     border-radius: 14.691px;
     background: var(--ffe-4-e-8, #FFE4E8);
+    width: 94.826px;
+    height: 29.383px;
+    text-align: center;
+
+  }
+
+  /*-------------- 
+    Media Queries
+  ----------------- */
+
+  /*------------------- 
+     Mobile Devices 
+   ------------------*/
+  @media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
   }
  
   
